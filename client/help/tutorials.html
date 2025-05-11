@@ -108,9 +108,38 @@ function openTab(evt, tabName) {
 <div style="border:dashed #80ff80 3px;"><div style="margin-left:100px; margin-right:100px;">
 <div>
 	<div class="tab">
+		<button class="tablinks active" onclick="openTab(event, 'Start')">Getting Started</button>
 		<button class="tablinks active" onclick="openTab(event, 'Building')">Building</button>
 		<button class="tablinks" onclick="openTab(event, 'CustomAvatar')">Custom avatars</button>
 		<button class="tablinks" onclick="openTab(event, 'CustomMapTile')">Custom map tile graphics</button>
+	</div>
+
+	<div class="tabcontent" id="Start" style="display: block;">
+		<p>Hello! Contained on the following tabs are tutorials for using Tilemap Town. Tilemap town is filled with chatting, building, and customization. This is to help guide you through various useful tools. More info can be found in the help tab.</p>
+		<h1 class="tab-fallback-heading">Getting Started</h1>
+		<h2>Player Controls</h2>
+		<p>Anyone visiting as a guest will first pop in at the Main Map. Registered Users will spawn in at their last location if possible. Players can easily move using the Arrow Keys, WASD, and Number Pad. Page Up, Page Down, End, and Home keys also work for diagonal movement. Holding Shift while pressing a movement key will make the player stand in place and look in that direction. Pressing Enter will open up the chat box taking away movement controls but allowing you to text. Hitting escape or clicking on the map will give control back to the player. For Mobile Client: Players are offered on-screen touch controls for motion.</p>
+		<h2>User Interface</h2>
+		<p>
+			A.) HUD Tabs
+			B.) Sub-Window : Certain actions like selecting tiles, clicking HUD tabs, editing tiles will open a sub-window. Sub-Windows can be moved viat the handle at the top and closed via the '-' in the corner.
+			C.) Chatbox : Chat will appear here. A larger version to the right can be opened via Chat Log
+			D.) Hotbar : Can be filled with tiles to quickly access and place (See 'Building' Tab for more info)
+		</p>
+		<h2>HUD Tabs</h2>
+		<p>Here's a quick rundown of all your tabs:
+			1.) Character Settings: Allows you to set your name, statuses, and avatar
+			2.) Mail: Send & Recieve user messages even when offline.
+			3.) Users: Shows all users (and entities) in the current map.
+			4.) Map: Edit the current map's name, description, and permissions.
+			5.) Chat Log: Pops out a full sized chat to the right. Required to hit certain buttons.
+			6.) Build: Brings up the build menu (See 'Building' tab for more info)
+			7.) Inventory: Stores stuff like items, gadgets, tilesets, etc.
+			8.) Files: Upload graphics to the site. Mainly to upload player & tile map graphics.
+			9.) Options: Adjust features like notification noises, walking through walls, auto-disconnect, etc.
+			10.) Login: Used for changing accounts or logining back in after a disconnect
+			11.) Help: Opens a new browser tab with Helpful information
+		</p>
 	</div>
 	
 	<div class="tabcontent" id="Building" style="display: block;">
